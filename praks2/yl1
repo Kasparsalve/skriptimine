@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# tervitusskript
+#
+echo -n "Tere, " # v2ljasta ilma reavhaetuseta Tere,
+echo -n "User" # v2ljasta ilma reavahetuseta User
+echo "!" # v2ljasta ! ja tee reavahetus
+#
+# skripti l6pp
