@@ -1,0 +1,7 @@
+#!/bin/bash
+# Teine skript muljete kohta
+echo "Kaspar Salve" # Ees ja Perenimi
+echo "IS19" # 6ppegrupp
+echo "Aine tundub huvitav, kuid olles mingilm22ral programmeerimisega tegelenud siis hetkel lihtne (kuigi syntax vajab harjumist)" # Mulje ja edasij6udmine
+echo "Hetkel sain valmis esimese ylesande. Syntax vajab harjumist." # Mulje ja edasij6udmine
+# skripti l6pp
