@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+find /var -iname *.log 2>/dev/null -exec wc -l {} \; | sort -n -r #otsib var kataloogist nime *.log j2rgi mitu lida leiti v2ljastab failide nimekirja sorteeritud kahanemisj2rjekorras vastavalt ridade arvule -n t2hendab numbrilist sortimist, -r t2hendab reverse ehk vastupidist
+#
+#l6pp
