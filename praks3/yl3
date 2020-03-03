@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#ylesanne 3, kellaaeg ja arvuti ylevalolek
+Kellaaeg=`date +"%T"` #hetkene kellaaeg HH:MM:SS
+UpTime=`uptime -p` #arvuti t66aeg
+echo "skriptimine at" $Kellaaeg $UpTime # v2ljastab kellaaja ja arvuti t66aja
+#
+#skripti l6pp
