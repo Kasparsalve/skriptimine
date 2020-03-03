@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+Tunnid=`date +"%H"`
+Minutid=`date +"%M"`
+P2evaNim=`date +"%A"`
+Kuu=`date +"%B"`
+Kuup2ev=`date +"%d"`
+Aasta=`date +"%Y"`
+echo "Today is "$P2evaNim, $Kuu $Kuup2ev, $Aasta #v2ljastab t2nase p2evanimetuse, kuu, kuup2eva, aasta
+echo "Time is "$Tunnid:$Minutid #v2ljastab tunnid ja minutid
+echo "" #tyhi rida
+echo -n "Calendar of" #v2ljastab lause Calendar of
+cal #v2ljastab oleva kuup2evaga kalendri
+#
+#Skripti l6pp
