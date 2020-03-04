@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#Programm, mis kysib nime ja v2ljastab tervituse
+echo -n "Sisesta oma ees- ja perenimi: " #kysib kasutajalt ees ja perenime
+read eesnimi perenimi #loeb sisestusest stringideks eesnime ja perenime, eraldajaks on tyhik
+echo "Tere tulemast, $eesnimi $perenimi" #v2ljastab tervituse koos ees- ja perenimega
+#
+#programmi l6pp
