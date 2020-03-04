@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#presidendi valimine
+aasta="2016" #valimise aasta
+president="Kersti Kaljulaid" #presidendi nimi
+lause_keskosa=". aastal valiti Eesti presidendiks " #lause keskosa
+lause="$aasta$lause_keskosa$president" #moodustab lause
+echo $lause #v2ljastab lause
+#
+#programmi l6pp
