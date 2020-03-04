@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#EAP arvestus
+echo -n "Sisestage ainepunktide arv: "
+read AinepunktideArv
+echo -n "Sisestage n2dalate arv: "
+read N2dalateArv
+ArvestusTunnid=`expr $AinepunktideArv \* 26`
+L6pparvutus=`expr $ArvestusTunnid / $N2dalateArv`
+echo "($L6pparvutus + 0.5)/1" | bc
