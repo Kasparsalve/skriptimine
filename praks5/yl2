@@ -1,0 +1,16 @@
+#! /bin/bash
+#Kysib kylje A
+echo "Sisesta kylg A: "
+read akylg
+#Kysib kylje B
+echo "Sisesta kylg B: "
+read bkylg
+#Kysib kylje C
+echo "Sisesta kylg C: "
+read ckylg
+#Leiab pool ymberm66dust, et lihtsustada valemit
+P=$(bc <<< "scale=1; ($akylg+$bkylg+$ckylg)/2")
+#Leiab Heroni valemiga pindala
+S=$(bc <<< "scale=4; sqrt(($P-$akylg)*($P-$bkylg)*($P-$ckylg)*$P)")
+#V2ljastab pindala
+echo "Pindala on "$S
