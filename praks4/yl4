@@ -1,0 +1,20 @@
+#!/bin/bash
+#Kysib palju on reisijaid
+echo "Sisesta reisijate arv"
+read reisijat
+#Küsib bussis olevate istekohtade arvu
+echo "Mitu istekohta on bussis?"
+read istet
+#Arvutab mitu bussit2it inimesi saab
+kohad=$(( $reisijat / $istet ))
+#Arvutab mitu inimest maha j22b
+maha=$(( $reisijat % $istet ))
+#Kontrollib et kas on vaja lisabussi kui mahaj22mine on v6rdne nulliga
+if [ $maha -eq 0 ]
+then 
+	#Kui mahaj22mine v6rdub nulliga siis k2ivitab j2rgmise k2su
+	echo "Vaja läheb " $kohad " bussi"
+else
+	#Kui aga ei ole v6rdne nulliga siis k2ivitab j2rgmise k2su
+	echo "Vaja läheb " `expr $kohad + 1` " bussi"
+fi
