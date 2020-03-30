@@ -1,0 +1,13 @@
+#! /bin/bash
+#Küsib külje A
+echo "Sisesta kylg A: "
+read akylg
+#Küsib külje B
+echo "Sisesta kylg B: "
+read bkylg
+#Arvutab ckylgeruudus, mis on ruudus
+let "ckylgruudus= $akylg * $akylg + $bkylg * $bkylg"
+#V6tab ruutjuure, sest on vaja kylge pikkust ilma ruutjuureta
+ckylg=$(bc <<< "scale=2; sqrt($ckylgruudus)")
+#V2ljastab vastuse
+echo "Kolmas külg on " $ckylg
