@@ -1,0 +1,8 @@
+#!/bin/bash
+#Kysib millal lähed puhkusele ja kui pikk see on
+echo -n "Mis p2eval lähed puhkusele? "
+read day
+echo -n "Kui kauaks l2hed puhkama?"
+read duration
+#V2ljastab, millal tuled tagasi
+echo -n "Sa tuled tagasi p2eval " `expr \( $day + $duration \) % 7`
