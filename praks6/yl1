@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo -n "Sisesta suvaline arv: " #kysib kasutajalt arvu
+read arv
+
+jaak=$(( $arv % 2 )) #arvutab arvust j22gi
+
+if [ $jaak -eq 0 ] #kasutades if funktsiooni kontrollib kas on paaris v6i ei.
+then
+	echo $arv " on paaris" #v2ljastab et number on paaris
+else
+	echo $arv " on paaritu" #v2ljastab et number on paaritu
+fi #l6petab if lause
