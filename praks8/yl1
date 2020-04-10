@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Kokku liitmine
+
+summa=0
+n=1
+for (( n=1; $n<11; n++)) #Kontrollib kas n on v2iksem kui 11
+do
+	jaak=$(bc <<< "$n % 2") #Kontrollib kas arv on paaris, kui vastus on 0 siis on tegu paarisarvuga
+	if [ $jaak -eq 0 ]; #Kui j22k on null siis j2tkab arvutust
+	then
+		summa=$(bc <<< "$summa + $n") #Liidab paaris arvu eelmiste paarisarvude summaga
+		echo $summa #Kontrollib mis tuleb vastuseks peale igat ringi 
+	fi
+done
+echo "Arvude vahemikus 1 kuni 10 paarisarvude summa on: $summa"
