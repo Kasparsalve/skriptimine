@@ -1,0 +1,19 @@
+!/bin/bash
+
+echo "Sisesta reisijate arv" #Kysib palju on reisijaid
+read reisijat
+
+echo "Mitu istekohta on bussis?" #Kysib istekohtade arvu
+read istekohta
+
+bussid=$(( $reisijat / $istekohta )) #Arvutab mitu bussi saab t2is
+
+maha=$(( $reisijat % $istekohta )) #Leiab mitu reisijat maha j22b
+
+if [ $maha -eq 0 ] #Kontrollib kas on vaja lisabussi
+then 
+	echo "Vaja l2heb " $bussid " bussi" #Ei ole vaja lisabussi
+
+else
+	echo "Vaja l2heb " `expr $bussid + 1` " bussi" 	#Yhte bussi l2heb veel vaja
+fi
