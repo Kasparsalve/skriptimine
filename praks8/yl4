@@ -1,0 +1,26 @@
+#!/bin/bash
+#algarv v6i mitte
+
+echo -n "Sisesta t2isarv: " #Kysib arvu
+read sisend
+jagaja=2
+
+#Kontrollib et kas arv on 0 või 1
+if [ $sisend -eq 0 -o $sisend -eq 1 ]
+then
+	echo "Sisestatud arv ei ole algarv"
+else #Jagab 2ga seni kuni saab, l6petab kui j22k on 0
+	jaak=$(($sisend % $jagaja))
+	while [ $jaak -ne 0 ]
+	do
+		jagaja=$((jagaja +1)) #Jagaja yhe v6rra suurendamine ja selle jagamine
+		jaak=$(($sisend % $jagaja))
+	done
+
+	if [ $sisend -eq $jagaja ] #Kontrollib kas ring on l6ppenud ja jagaja on v6rdne arvuga
+	then
+		echo "$sisend on algarv" #v2ljastab, et on algarv
+	else
+		echo "$sisend ei ole algarv" #v2ljastab, et ei ole algarv
+	fi
+fi
